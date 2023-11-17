@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presupuesto</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="contenedor">
+        <section class="mostrar">
+            <h1 class="titulo">Presupuesto de <span id="mesAnio"></span></h1>
+            <h1 id="presupuesto"></h1>
+            <h2 id="ingresos">Ingresos: </h2>
+            <h2 id="egresos">Egresos: </h2>
+
+            <h2 id="porcentaje">Porcentaje de gastos: </h2>
+        </section>
+        <section class="ingresar">
+            <article class="transaccion">
+                <h2>Transacción</h2>
+                <form action="#" id="form">
+                    <select name="tipo" id="tipo" class="item-transaccion">
+                        <option value="ingreso">Ingreso</option>
+                        <option disabled id="egresoValor" value="egreso">Egreso</option>
+                    </select>
+                    <input type="text" class="item-transaccion" placeholder="Descripción" id="descripcion" name="descripcion"  required>
+                    <input type="number" class="item-transaccion" placeholder="Monto" id="monto" name="monto" required>
+                    <button type="submit" id="agregar">Agregar</button>
+                </form>
+            </article>
+            <article class="detalles">
+                <div class="caja">
+                    <div class="caja-texto" id="ing">Ingresos</div>
+                    <div class="caja-texto" id="egr">Egresos</div>
+                </div>
+                <div id="items">
+                </div>
+            </article>
+        </section>
+    </div>
+    <script src="./scripts/scripts.js"></script>
+</body>
+</html>

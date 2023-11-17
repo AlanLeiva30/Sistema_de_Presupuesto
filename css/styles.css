@@ -1,0 +1,188 @@
+body{
+    margin: 0;
+    background-image: url("../images/2.jpg");
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    font-size: 3em;
+}
+
+h2{
+    font-size: 2em;
+}
+
+#ingresos{
+    color: white;
+    background-color: black;
+    width: 20%;
+    margin: 0 auto;
+    text-align: inherit;
+    border-radius: 0.3rem;
+    padding: 0.5rem;
+    border: 1px solid black;
+}
+
+#egresos{
+    background-color: white;
+    width: 20%;
+    margin: 1rem auto 0 auto;
+    text-align: inherit;
+    border-radius: 0.3rem;
+    padding: 0.5rem;
+    border: 1px solid black;
+}
+
+#porcentajeResaltado{
+    color: white;
+    background-color: black;
+    padding: 0.4rem;
+    border-radius: 0.3rem;
+}
+
+.contenedor{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.mostrar{
+    width: 100%;
+    height: 50vh;
+    text-align: center;
+}
+
+.ingresar{
+    border: black 4px solid;
+    display: flex;
+    width: 100%;
+    height: 50vh;
+    text-align: center;
+}
+
+.transaccion{
+    display: flex;
+    flex-flow: column wrap;
+    width: 50%;
+    border-right: 1px solid black;
+    background-color: rgba(127, 255, 212, 0.288);
+}
+
+#form{
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    align-items: center;
+}
+
+.item-transaccion{
+    width: 25%;
+    margin: 0.7rem;
+    padding: 0.6rem;
+    border-radius: 0.3rem;
+}
+
+button{
+    width: 15%;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    
+}
+
+.detalles{
+    display: flex;
+    flex-flow: column wrap;
+    width: 50%;
+    align-items: center;
+    background-color: rgba(255, 0, 0, 0.222);
+}
+.caja{
+    display: flex;
+    width: 80%;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+#ing{
+    border-radius: 10px 0 0 10px;
+}
+#egr{
+    border-radius: 0 10px 10px 0;
+}
+.caja-texto {
+    border: 1px solid black;
+    padding: 10px 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .caja-texto:hover {
+    background-color: #f4eded;
+    border-color: #0d0d0d;
+    transform: scale(1.1);
+  }
+  
+  .caja-texto:active {
+    background-color: #f6f3f3;
+    border-color: #0c0c0c;
+    transform: scale(0.9);
+  }
+  
+  
+
+#ing{
+    background-color: white;
+    width: 50%;
+    padding: 1rem;
+    border-right: 1px solid black;
+}
+
+#egr{
+    background-color: rgb(151, 147, 147);
+    width: 50%;
+    padding: 1rem;
+}
+
+#items{
+    display: flex;
+    width: 80%;
+    flex-flow: column;
+    gap: 0.5rem;
+    height: 60%;
+    overflow-y: scroll;
+}
+
+.item{
+    display: flex;
+    padding: 1rem;
+    text-align: start;
+    background-color: white;
+    justify-content: space-between;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+}
+
+input[type="text"],
+input[type="number"],
+button {
+  background-color: white; /* Fondo blanco inicial */
+  background-image: none;  /* Sin imagen de fondo */
+  transition: background-color 0.3s ease; /* Transición animada */
+}
+
+
+input[type="text"]:hover,
+input[type="number"]:hover,
+button:hover {
+  background-color: lightgray;
+}
+
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+  background-color:lightgray;
+}
